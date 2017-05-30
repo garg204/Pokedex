@@ -12,9 +12,11 @@
 		BCED86611EDDF39000FEC85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCED865F1EDDF39000FEC85F /* Main.storyboard */; };
 		BCED86631EDDF39000FEC85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCED86621EDDF39000FEC85F /* Assets.xcassets */; };
 		BCED86661EDDF39000FEC85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCED86641EDDF39000FEC85F /* LaunchScreen.storyboard */; };
+		DBDF8A96CE516676B8F202FA /* Pods_Pokedox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FADCA6BEE5244F56A37101 /* Pods_Pokedox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC97EF2F871B196C8BF0F371 /* Pods-Pokedox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedox/Pods-Pokedox.debug.xcconfig"; sourceTree = "<group>"; };
 		BCED86581EDDF39000FEC85F /* Pokedox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCED865B1EDDF39000FEC85F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCED865D1EDDF39000FEC85F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		BCED86621EDDF39000FEC85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCED86651EDDF39000FEC85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCED86671EDDF39000FEC85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FADCA6BEE5244F56A37101 /* Pods_Pokedox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95B29A34C6023DF63F7534C /* Pods-Pokedox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokedox/Pods-Pokedox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDF8A96CE516676B8F202FA /* Pods_Pokedox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FA1F32AE3B2990422BE8F60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC97EF2F871B196C8BF0F371 /* Pods-Pokedox.debug.xcconfig */,
+				D95B29A34C6023DF63F7534C /* Pods-Pokedox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BCED864F1EDDF39000FEC85F = {
 			isa = PBXGroup;
 			children = (
 				BCED865A1EDDF39000FEC85F /* Pokedox */,
 				BCED86591EDDF39000FEC85F /* Products */,
+				5FA1F32AE3B2990422BE8F60 /* Pods */,
+				E8D85C32DD02D8BEC642E230 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Pokedox;
 			sourceTree = "<group>";
 		};
+		E8D85C32DD02D8BEC642E230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FADCA6BEE5244F56A37101 /* Pods_Pokedox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCED866A1EDDF39000FEC85F /* Build configuration list for PBXNativeTarget "Pokedox" */;
 			buildPhases = (
+				C0E774454604449207E6C267 /* [CP] Check Pods Manifest.lock */,
 				BCED86541EDDF39000FEC85F /* Sources */,
 				BCED86551EDDF39000FEC85F /* Frameworks */,
 				BCED86561EDDF39000FEC85F /* Resources */,
+				779EF508FD3B5ADEF32F84DE /* [CP] Embed Pods Frameworks */,
+				ECE08E03FFFF8B512CCE0741 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		779EF508FD3B5ADEF32F84DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokedox/Pods-Pokedox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E774454604449207E6C267 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECE08E03FFFF8B512CCE0741 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokedox/Pods-Pokedox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCED86541EDDF39000FEC85F /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		BCED866B1EDDF39000FEC85F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC97EF2F871B196C8BF0F371 /* Pods-Pokedox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FFJ5JGY6C5;
@@ -274,6 +350,7 @@
 		};
 		BCED866C1EDDF39000FEC85F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95B29A34C6023DF63F7534C /* Pods-Pokedox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FFJ5JGY6C5;
